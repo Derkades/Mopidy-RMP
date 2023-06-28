@@ -1,5 +1,4 @@
-from mopidy_Mopidy-RMP import Extension
-from mopidy_Mopidy-RMP import frontend as frontend_lib
+from mopidy_rmp import Extension
 
 
 def test_get_default_config():
@@ -16,9 +15,9 @@ def test_get_config_schema():
 
     schema = ext.get_config_schema()
 
-    # TODO Test the content of your config schema
-    # assert "username" in schema
-    # assert "password" in schema
+    # Test the content of your config schema
+    assert "username" in schema
+    assert "password" in schema
 
 
 # TODO Write more tests
